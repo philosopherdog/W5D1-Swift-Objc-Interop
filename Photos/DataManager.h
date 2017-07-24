@@ -8,8 +8,9 @@
 
 @import UIKit;
 @class PhotoCollectionViewCell;
+@class Photo;
 
 @interface DataManager : NSObject
-- (void)performRequest:(void (^)(NSArray *))completionHandler;
+- (void)performRequest:(void (^)(NSArray<Photo*> *))completionHandler;
 - (void)fetchImageAtURL:(NSURL *)url handler:(void (^)(UIImage *image))handler;
 @end
