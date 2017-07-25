@@ -1,8 +1,8 @@
 #import <UIKit/UIKit.h>
+@class Photo;
 
 @interface PhotoCollectionViewCell : UICollectionViewCell
 
-@property (weak, nonatomic) IBOutlet UIImageView *imageView;
-@property (weak, nonatomic) IBOutlet UILabel *label;
 
+@property (nonatomic, strong) Photo *photo;
 @end

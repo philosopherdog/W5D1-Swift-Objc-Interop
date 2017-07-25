@@ -15,4 +15,5 @@ class Photo: NSObject {
     self.title = title
     self.url = url
   }
+  var imageObject: ImageObject?
 }

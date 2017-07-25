@@ -2,6 +2,7 @@
 #import "PhotoCollectionViewCell.h"
 #import "DataManager.h"
 #import "Photos-Swift.h"
+#import "ImageObject.h"
 
 @interface ViewController () <UICollectionViewDataSource>
 
@@ -46,19 +47,21 @@
   
   PhotoCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"photo-cell" forIndexPath:indexPath];
   
-  NSDictionary *photo = self.photos[indexPath.row];
-  cell.label.text = photo[@"title"];
-  NSURL *url = [NSURL URLWithString:photo[@"url_m"]];
-  [self.dataManager fetchImageAtURL:url handler:^(UIImage *image) {
-    dispatch_queue_t mainQ = dispatch_get_main_queue();
-    dispatch_async(mainQ, ^{
-      cell.imageView.image = image;
-    });
-  }];
+  Photo *photo = self.photos[indexPath.row];
+  
+  cell.photo = photo;
+  if (!photo.imageObject) {
+    [self.dataManager fetchImageAtURL:photo.url handler:^(UIImage *image) {
+      dispatch_queue_t mainQ = dispatch_get_main_queue();
+      dispatch_async(mainQ, ^{
+        ImageObject *imageObject = [[ImageObject alloc] initWithImage:image];
+        photo.imageObject = imageObject;
+        cell.photo = photo;
+      });
+    }];
+  }
   return cell;
 }
-
-
 
 @end
 

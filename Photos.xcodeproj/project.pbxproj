@@ -16,6 +16,7 @@
 		222D7A911E6B80A8007D3807 /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 222D7A8F1E6B80A8007D3807 /* PhotoCollectionViewCell.m */; };
 		222D7A931E6B80BF007D3807 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 222D7A921E6B80BF007D3807 /* Main.storyboard */; };
 		AA6838751F2632CD0039BEF4 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6838741F2632CD0039BEF4 /* Photo.swift */; };
+		AA6838781F263B070039BEF4 /* ImageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6838771F263B070039BEF4 /* ImageObject.m */; };
 		AAF057EF1F257171000B6950 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF057EE1F257171000B6950 /* DataManager.m */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,8 @@
 		222D7A921E6B80BF007D3807 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		AA6838731F2632CD0039BEF4 /* Photos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Photos-Bridging-Header.h"; sourceTree = "<group>"; };
 		AA6838741F2632CD0039BEF4 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		AA6838761F263B070039BEF4 /* ImageObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageObject.h; sourceTree = "<group>"; };
+		AA6838771F263B070039BEF4 /* ImageObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageObject.m; sourceTree = "<group>"; };
 		AAF057ED1F257171000B6950 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		AAF057EE1F257171000B6950 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +99,8 @@
 				222D7A8F1E6B80A8007D3807 /* PhotoCollectionViewCell.m */,
 				AAF057ED1F257171000B6950 /* DataManager.h */,
 				AAF057EE1F257171000B6950 /* DataManager.m */,
+				AA6838761F263B070039BEF4 /* ImageObject.h */,
+				AA6838771F263B070039BEF4 /* ImageObject.m */,
 				222D7A671E6B8059007D3807 /* Supporting Files */,
 				AA6838741F2632CD0039BEF4 /* Photo.swift */,
 				AA6838731F2632CD0039BEF4 /* Photos-Bridging-Header.h */,
@@ -234,6 +239,7 @@
 				AA6838751F2632CD0039BEF4 /* Photo.swift in Sources */,
 				222D7A6F1E6B8059007D3807 /* ViewController.m in Sources */,
 				AAF057EF1F257171000B6950 /* DataManager.m in Sources */,
+				AA6838781F263B070039BEF4 /* ImageObject.m in Sources */,
 				222D7A6C1E6B8059007D3807 /* AppDelegate.m in Sources */,
 				222D7A911E6B80A8007D3807 /* PhotoCollectionViewCell.m in Sources */,
 				222D7A691E6B8059007D3807 /* main.m in Sources */,
